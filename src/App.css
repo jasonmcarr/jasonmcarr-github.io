@@ -2,12 +2,13 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Roboto Condensed', sans-serif;
+  color: #ffffff;
   /* border: solid 1px #00000080; */
 }
 
 body {
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: #898989;
   width: 100vw;
   height: 100vh;
   padding: clamp(10px, 4vmin, 40px);
@@ -15,8 +16,9 @@ body {
 
 .square {
   border: solid 1px #00000080;
-  width: 100%;
+  width: auto;
   height: 100%;
+  margin: 0;
   opacity: 1;
   padding: clamp(10px, 4vmin, 40px);
   display: flex;

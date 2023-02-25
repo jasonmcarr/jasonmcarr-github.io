@@ -1,0 +1,9 @@
+.author-summary {
+    width: 20%;
+    display: flex;
+    align-items: flex-end;
+}
+
+main {
+    justify-content: right;
+}
