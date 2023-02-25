@@ -1,7 +1,7 @@
 * {
+  font-family: 'Lato', sans-serif;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto Condensed', sans-serif;
   color: #ffffff;
   /* border: solid 1px #00000080; */
 }
@@ -29,12 +29,12 @@ body {
 
 .author-title {
   font-size: 1.875rem;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 .author-descriptor {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 .nav {
@@ -51,13 +51,13 @@ body {
 
 .nav-link {
   text-decoration: none;
-  color: black;
+  color: #ffffff;
   font-size: 1rem;
   font-weight: 600;
 }
 
 .nav-link:hover {
-  color: #6F6F6F;
+  color: #000000;
 }
 
 .permanent-elements {
@@ -67,7 +67,7 @@ body {
   gap: clamp(10px, 4vmin, 40px);
 }
 
-main {
+.summary-container {
   height: 100%;
   display: flex;
   font-size: 0.875rem;

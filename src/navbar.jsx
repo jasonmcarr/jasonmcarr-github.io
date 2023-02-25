@@ -1,31 +1,41 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-function Navbar () {
-  return (
-    <><nav className="permanent-elements">
-      <div>
-        <h1 className="author-title">Jason Carr</h1>
-        <h4 className="author-descriptor">Data Analyst & Physicist</h4>
-      </div>
-    </nav>
-    <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="src\components\projects.jsx">Projects</Link>
-          </li>
-          <li>
-            <Link to="src\components\about.jsx">About</Link>
-          </li>
-          <li>
-            <Link to="src\components\contact.jsx">Contact</Link>
-          </li>
-        </ul>
-      </nav></>
-  );
-}
+function Navbar() {
+    return (
+      <>
+        <nav className="permanent-elements">
+          <div>
+            <h1 className="author-title">Jason Carr</h1>
+            <h4 className="author-descriptor">Data Analyst & Physicist</h4>
+          </div>
+        </nav>
+          <nav className="nav">
+            <ul>
+              <li>
+                <NavLink to="/" className="nav-link">
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/projects" className="nav-link">
+                  Projects
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/about" className="nav-link">
+                  About
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/contact" className="nav-link">
+                  Contact
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
+      </>
+    );
+  }
 
 export default Navbar;

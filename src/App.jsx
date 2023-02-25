@@ -1,33 +1,30 @@
 import React from "react";
 import "./App.css";
-import "./components/author-summary/author-summary.css";
-// import "./components/name-animation/name-animation.css";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from "./navbar.jsx";
-import Home from "./components/home";
+// import ParticleSketch from "./components/bganimation.js";
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/home/home";
 import Projects from "./components/projects/projects";
-import About from "./components/about";
-import Contact from "./components/contact"
-// import AuthorSummary from "./components/author-summary/author-summary";
+import About from "./components/about/about";
+import Contact from "./components/contact/contact";
+
 // import NameAnimation from "./components/name-animation/name-animation.js";
+// import "./components/name-animation/name-animation.css";
 
-function App() {
-  // NameAnimation();
-  return (
-    <div className="square">
-      <>
-        <BrowserRouter>
-          <Navbar />
+function App () {
+    return (
+      <div className="square">
+        {/* <ParticleSketch /> */}
+        <Navbar />
+        <div>
           <Routes>
-            <Route path="/home" component={<Home />} />
-            <Route path="/projects" component={<Projects />} />
-            <Route path="/about" component={<About />} />
-            <Route path="/contact" component={<Contact />} />
+            <Route path={"/"} element={<Home/>} />
+            <Route path={"/projects"} element={<Projects />} />
+            <Route path={"/about"} element={<About />} />
+            <Route path={"/contact"} element={<Contact />} />
           </Routes>
-        </BrowserRouter>
-      </>
-    </div>
-  );
+        </div>
+      </div>
+    );
 }
-
 export default App;
