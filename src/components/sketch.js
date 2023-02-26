@@ -4,7 +4,7 @@ export default function sketch(p) {
   let particles = [];
 
   p.setup = function () {
-    p.createCanvas(p.windowWidth, p.windowHeight);
+    p.createCanvas(p.displayWidth, p.displayHeight);
     for (let i = 0; i < 5000; i++) {
       particles.push(new Particle(p.random(p.width), p.random(p.height)));
     }
@@ -29,7 +29,7 @@ export default function sketch(p) {
   
     update() {
       let d = p.dist(this.pos.x, this.pos.y, p.mouseX, p.mouseY);
-      let speed = p.map(d, 0, p.width, this.maxSpeed, 5);
+      let speed = p.map(d, 0, p.width, this.maxSpeed, 0);
       this.alpha = p.map(
         p.sin(p.frameCount * 0.05 + this.pos.x * 0.01 + this.pos.y * 0.01),
         -1,
