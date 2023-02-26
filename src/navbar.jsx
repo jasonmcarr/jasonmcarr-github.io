@@ -5,10 +5,8 @@ function Navbar() {
   return (
     <>
       <nav className="permanent-elements">
-        <div>
           <h1 className="author-title">Jason Carr</h1>
           <h4 className="author-descriptor">Data Analyst & Physicist</h4>
-        </div>
       </nav>
       <nav className="navbar">
         <ul>

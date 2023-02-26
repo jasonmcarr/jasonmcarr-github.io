@@ -5,7 +5,7 @@ export default function sketch(p) {
 
   p.setup = function () {
     p.createCanvas(p.displayWidth, p.displayHeight);
-    for (let i = 0; i < 5000; i++) {
+    for (let i = 0; i < 7500; i++) {
       particles.push(new Particle(p.random(p.width), p.random(p.height)));
     }
   };
