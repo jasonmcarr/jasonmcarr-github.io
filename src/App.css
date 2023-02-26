@@ -23,7 +23,7 @@ body {
   background: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAATSURBVBhXY2RgYNgHxGAAYuwDAA78AjwwRoQYAAAAAElFTkSuQmCC)
     repeat scroll transparent\9;
   /* ie fallback png background image */
-  z-index: 0;
+  z-index: -1;
   color: white;
   backdrop-filter: blur(1.5px);
 }
@@ -57,7 +57,7 @@ body {
   height: 100%;
   box-sizing: border-box;
   border: clamp(10px, 4vmin, 40px) solid rgb(166, 166, 166);
-  z-index: 9999;
+  z-index: 0;
 }
 
 .author-title {
@@ -109,7 +109,7 @@ canvas {
   width: 100%;
   position: absolute;
   opacity: 1;
-  z-index: -1;
+  z-index: -2;
   margin: 0;
   padding: clamp(10px, 4vmin, 40px);
   left: 0;
