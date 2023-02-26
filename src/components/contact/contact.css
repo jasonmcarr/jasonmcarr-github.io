@@ -1,3 +1,50 @@
 .contact-content {
-    z-index: 1;
+  z-index: 1;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  /* background-color: #0D0D0D; */
+  border: 1px solid #ddd;
+}
+
+.contact-content h2 {
+  font-size: 1.875rem;
+  margin-bottom: 20px;
+}
+
+.contact-content label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.contact-content input[type="text"],
+.contact-content input[type="email"],
+.contact-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact-content input[type="submit"] {
+  /* background-color: #0D0D0D; */
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-content input[type="submit"]:hover {
+  background-color: #0D0D0D;
+}
+
+.contact-me input[type="text"],
+.contact-me input[type="email"],
+.contact-me textarea {
+  background-color: transparent;
 }

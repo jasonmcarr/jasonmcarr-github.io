@@ -3,6 +3,7 @@
   /* margin: 0; */
   box-sizing: border-box;
   color: #ffffff;
+  text-decoration: none;
   /* border: solid 1px #00000080; */
 }
 
@@ -36,7 +37,6 @@ body {
   opacity: 1;
   z-index: 0;
   padding-left: clamp(10px, 4vmin, 40px);
-  /* padding-top: clamp(10px, 4vmin, 40px); */
   margin-top: clamp(10px, 4vmin, 40px);
   margin-left: clamp(10px, 4vmin, 40px);
   display: flex;
@@ -62,13 +62,13 @@ body {
 
 .author-title {
   font-size: 1.875rem;
-  font-weight: 600;
+  font-weight: 300;
   margin-bottom: calc(-1.5 * clamp(10px, 4vmin, 40px));
 }
 
 .author-descriptor {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 300;
 }
 .navbar {
   margin-top: calc(-1 * clamp(10px, 4vmin, 40px));
