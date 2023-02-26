@@ -2,7 +2,7 @@ import React from "react";
 
 function About () {
     return (
-      <div>
+      <div className="about-content">
         About stuffy bois placeholder
       </div>
     );

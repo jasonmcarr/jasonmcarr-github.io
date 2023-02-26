@@ -2,7 +2,6 @@ import React from "react";
 
 function Home() {
     return (
-        <div className="summary-container">
           <section className="author-summary">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
             iusto repellat soluta voluptate atque animi ratione reiciendis
@@ -11,7 +10,7 @@ function Home() {
             odit enim debitis sit dignissimos deserunt libero corporis
             necessitatibus vel cumque, ex distinctio odio praesentium.
           </section>
-        </div>
+
     );
   }
 
