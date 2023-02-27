@@ -24,11 +24,11 @@ export default function sketch(p) {
       this.vel = p.createVector(p.random(-1, 1), p.random(-1, 1));
       this.alpha = 0;
       this.size = 0.01;
-      this.maxSpeed = 5;
+      this.maxSpeed = 2;
     }
   
     update() {
-      let d = p.dist(this.pos.x, this.pos.y, p.mouseX, p.mouseY);
+      let d = p.dist(this.pos.x, this.pos.y, p.mouseX/2, p.mouseY/2);
       let speed = p.map(d, 0, p.width, this.maxSpeed, 0);
       this.alpha = p.map(
         p.sin(p.frameCount * 0.05 + this.pos.x * 0.01 + this.pos.y * 0.01),

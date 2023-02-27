@@ -7,7 +7,10 @@ function Projects() {
     <div className="nav-aligner">
       <section className="projects-nav">
         {projects_array.map((item) => (
-          <NavLink key={projects_array.indexOf(item)} to={`project${projects_array.indexOf(item) + 1}`}>
+          <NavLink
+            key={projects_array.indexOf(item)}
+            to={`project${projects_array.indexOf(item) + 1}`}
+          >
             <h1 className="project-title">{item.Title}</h1>
             <p className="project-summary">{item.Description}</p>
           </NavLink>

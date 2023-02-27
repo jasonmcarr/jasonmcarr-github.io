@@ -17,13 +17,16 @@ import Project2 from "./components/projects/project2";
 import Project3 from "./components/projects/project3";
 import Project4 from "./components/projects/project4";
 import Project5 from "./components/projects/project5";
-// import NameAnimation from "./components/name-animation/name-animation.js";
-// import "./components/name-animation/name-animation.css";
 
 function App() {
   return (
     <>
-      <div className="border-square" />
+      <div className="intro-splash">
+        <h1 className="auth-name">Jason Carr&nbsp;</h1>
+        <h1 className="auth-folio">Portfolio</h1>
+      </div>
+      <div className="App">
+        <div className="border-square" />
         <div className="animation">
           <div className="animation-overlay" />
           <ReactP5Wrapper className="p5-wrapper" sketch={sketch} />
@@ -44,7 +47,9 @@ function App() {
             </Routes>
           </div>
         </div>
+      </div>
     </>
   );
 }
+
 export default App;
