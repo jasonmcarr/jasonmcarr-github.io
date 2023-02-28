@@ -1,6 +1,8 @@
 import React from "react";
+import { opacityFilterRemove } from "../../utils/functions";
 
 function Contact() {
+  opacityFilterRemove();
   return (
     <div className="contact-content">
       <h2>Contact Me</h2>

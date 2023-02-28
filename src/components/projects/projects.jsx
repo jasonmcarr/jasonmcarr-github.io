@@ -1,8 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { projects_array } from "../../services/projectsarray";
+import { opacityFilterRemove } from "../../utils/functions";
 
 function Projects() {
+  opacityFilterRemove();
   return (
     <div className="nav-aligner">
       <section className="projects-nav">

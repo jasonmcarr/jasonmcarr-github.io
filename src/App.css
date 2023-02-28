@@ -14,6 +14,7 @@ body {
   height: 100vh;
   /* padding: clamp(10px, 4vmin, 40px); */
 }
+
 .animation-overlay {
   position: absolute;
   top: 0;
@@ -27,6 +28,10 @@ body {
   z-index: -1;
   color: white;
   backdrop-filter: blur(1px);
+}
+
+.project-overlay-change {
+  background-color: rgba(0, 0, 0, 0.95);
 }
 
 .square {

@@ -1,6 +1,8 @@
 import React from "react";
+import { opacityFilterRemove } from "../../utils/functions";
 
 function Home() {
+  opacityFilterRemove();
   return (
     <section className="author-summary">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur iusto
