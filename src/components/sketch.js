@@ -24,7 +24,7 @@ export default function sketch(p) {
     //Constructor function that creates and initializes an object instance of a class; creates a new object and set values for any existing object properties
     constructor(x, y) {
       this.pos = p.createVector(x, y);
-      this.vel = p.createVector(x, y);
+      this.vel = p.createVector(p.random(-1, 1), p.random(-1, 1));
       this.alpha = 0;
       this.size = 1;
       this.maxSpeed = 2;
@@ -48,24 +48,31 @@ export default function sketch(p) {
         -1,
         1,
         1,
-        230
+        4
       );
       let angle =
         //Noise value between (0,1) at coordinates (x,y,z)
         p.noise(this.pos.x * 0.005, this.pos.y * 0.005, p.frameCount * 0.001) *
         p.TWO_PI *
         4;
+
       //Vector with direction=angle and magnitude=speed
-      let direction = p5.Vector.fromAngle(angle, speed);
-      this.vel.add(direction);
+      let directionandmagnitude = p5.Vector.fromAngle(angle, speed);
+      this.vel.add(directionandmagnitude);
       this.vel.limit(this.maxSpeed);
       this.pos.add(this.vel);
 
-      //Barrier
-      if (this.pos.x >= p.width) this.vel.x = -10000 * this.vel.x;
-      if (this.pos.y >= p.height) this.vel.y = -10000 * this.vel.y;
-      if (this.pos.x <= 0) this.vel.x = -10000 * this.vel.x;
-      if (this.pos.y <= 0) this.vel.y = -10000 * this.vel.y;
+  // if (this.pos.x < 0) {
+  //   this.pos.x = p.width;
+  // } else if (this.pos.x > p.width) {
+  //   this.pos.x = 0;
+  // }
+
+  // if (this.pos.y < 0) {
+  //   this.pos.y = p.height;
+  // } else if (this.pos.y > p.height) {
+  //   this.pos.y = 0;
+  // }
     }
 
     show() {
@@ -75,3 +82,87 @@ export default function sketch(p) {
     }
   }
 }
+
+// import p5 from "p5";
+
+// export default function sketchnew(p) {
+//   class Particle {
+//     // setting the coordinates, radius and the
+//     // speed of a particle in both the coordinates axes.
+//     constructor() {
+//       this.x = p.random(0, p.width);
+//       this.y = p.random(0, p.height);
+//       this.r = 5
+//       this.l = 50
+//       this.angle = p.random(0,p.TWO_PI)
+//       this.xAngle = p.cos(this.angle)
+//       this.yAngle = p.sin(this.angle)
+//       this.xSpeed = p.random(-1, 1);
+//       this.ySpeed = p.random(-1, 1);
+//       this.maxSpeed = 2;
+//       this.pos = p.createVector(this.x, this.y);
+//       this.vel = p.createVector(this.x, this.y);
+//       this.trail = [];
+//     }
+
+//     // creation of a particle.
+//     createParticle() {
+//       p.noStroke();
+//       p.fill(0, 0, 0);
+//       p.circle(this.x, this.y, this.r);
+//     }
+
+//     // setting the particle in motion.
+//     moveParticle() {
+//       if (this.x < 0 || this.x > p.width) this.xSpeed *= -1;
+//       if (this.y < 0 || this.y > p.height) this.ySpeed *= -1;
+//       this.x += this.xSpeed;
+//       this.y += this.ySpeed;
+//       this.trail.push(p.createVector(this.x, this.y));
+//     }
+
+//     //updating the attributes of the particles
+//     update() {
+//         // this.r = p.map(
+//         // p.sin(p.frameCount * 0.05 + this.xSpeed * 0.01 + this.ySpeed * 0.01),
+//         // -1, 1, 1, 200) * 2;
+//         this.x = p.random(this.x - 0.01, this.x + 0.01);
+//         this.y = p.random(this.y - 0.01, this.y + 0.01);
+//         let angle = p.noise(
+//             this.x * 0.005,
+//             this.y * 0.005, p.frameCount * 0.001) 
+//             * p.TWO_PI * 4;
+//     }
+
+//     drawTail() {
+//         for (let i = 0; i < this.trail.length; i++) {
+//             p.noStroke();
+//             p.fill(0, 0, 0, 255 - i * (255 / this.trail.length));
+//             p.circle(this.trail[i].x, this.trail[i].y, this.r * (i / this.trail.length))
+//         }
+//     }
+
+//   }
+
+//   // an array to add multiple particles
+//   let particles = [];
+
+//   p.setup = function () {
+//     p.frameRate(60)
+//     p.createCanvas(p.displayWidth, p.displayHeight);
+//     for (let i = 0; i < p.width / 10; i++) {
+//       particles.push(new Particle());
+//     }
+//   };
+
+//   p.draw = function () {
+//     p.background(127, 127, 127);
+//     for (let i = 0; i < particles.length; i++) {
+//       particles[i].createParticle();
+//       particles[i].moveParticle();
+//       particles[i].update();
+//       particles[i].drawTail();
+//       // particles[i].pushParticles();
+//     }
+//   };
+// }
