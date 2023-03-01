@@ -1,0 +1,38 @@
+/* Set a minimum font size for the entire page */
+/* body {
+  font-size: 1rem;
+  min-width: 1px;
+  max-width: 100px;
+} */
+
+/* Create a container for the columns */
+.column-container {
+  display: flex;
+  justify-content: space-between;
+  /* gap: clamp(10px, 4vmin, 40px); */
+  /* padding: 0 clamp(10px, 4vmin, 40px); */
+}
+
+/* Style the individual columns */
+.column {
+  flex: 1 1 clamp(200px, 40%, 800px);
+  margin: 0 calc(0.5 * clamp(10px, 4vmin, 40px));
+  /* padding: clamp(10px, 4vmin, 40px); */
+  /* background-color: #f0f0f0; */
+  /* box-shadow: 0 0 10px rgba(255,255,255,1); */
+}
+
+/* Set the margin on the left side of the first column */
+.column:first-of-type {
+  margin-left: 0;
+}
+
+.column:last-of-type {
+  margin-right: clamp(10px, 4vmin, 40px);
+}
+
+/* Set the font size for the columns */
+/* .column p {
+  font-size: 1rem;
+} */
+

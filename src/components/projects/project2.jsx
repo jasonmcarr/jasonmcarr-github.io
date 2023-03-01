@@ -1,7 +1,7 @@
 import React from "react";
 import { opacityFilter } from "../../utils/functions";
 
-function Project1 (){
+function Project2 (){
   opacityFilter();
     return (
       <section className="project2-content">
@@ -10,4 +10,4 @@ function Project1 (){
     );
 }
 
-export default Project1;
+export default Project2;

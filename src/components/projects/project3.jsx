@@ -1,13 +1,14 @@
-import React from "react";
 import { opacityFilter } from "../../utils/functions";
+import { Tableau } from "./tableau";
 
-function Project1 (){
+function Project3() {
   opacityFilter();
-    return (
-      <section className="project3-content">
-        Proj content i.e pictures and paragraphs
-      </section>
-    );
+  return (
+    <div id="vizContainer">
+      <h1>Tableau Dashboard in React</h1>
+      <Tableau/>
+    </div>
+  );
 }
 
-export default Project1;
+export default Project3;
