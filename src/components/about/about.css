@@ -1,3 +1,4 @@
 .about-content {
+    padding-top: clamp(10px, 4vmin, 40px);
     z-index: 1;
 }

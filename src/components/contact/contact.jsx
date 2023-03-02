@@ -4,10 +4,11 @@ import { opacityFilterRemove } from "../../utils/functions";
 function Contact() {
   opacityFilterRemove();
   return (
+    <div className="contact-box">
     <div className="contact-content">
       <h2>Contact Me</h2>
       <form
-        action="mailto:jacemcarr@gmail.com"
+        // action="mailto:jacemcarr@gmail.com"
         method="post"
         enctype="text/plain"
       >
@@ -19,6 +20,7 @@ function Contact() {
         <textarea id="message" name="message" required></textarea>
         <input type="submit" value="Send"></input>
       </form>
+    </div>
     </div>
   );
 }

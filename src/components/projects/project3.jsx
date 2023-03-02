@@ -1,13 +1,12 @@
 import { opacityFilter } from "../../utils/functions";
-import { Tableau } from "./tableau";
+import TableauEmbed from "./TableauEmbed";
 
 function Project3() {
   opacityFilter();
   return (
-    <div id="vizContainer">
-      <h1>Tableau Dashboard in React</h1>
-      <Tableau/>
-    </div>
+    <tableau-viz id="tableauViz">
+      {/* <TableauEmbed /> */}
+    </tableau-viz>
   );
 }
 
