@@ -1,16 +1,9 @@
-/* Set a minimum font size for the entire page */
-/* body {
-  font-size: 1rem;
-  min-width: 1px;
-  max-width: 100px;
-} */
-
 /* Create a container for the columns */
 .column-container {
   display: flex;
   justify-content: space-between;
   /* gap: clamp(10px, 4vmin, 40px); */
-  /* padding: 0 clamp(10px, 4vmin, 40px); */
+  padding-top: clamp(10px, 4vmin, 40px);
 }
 
 /* Style the individual columns */
@@ -22,17 +15,21 @@
   /* box-shadow: 0 0 10px rgba(255,255,255,1); */
 }
 
-/* Set the margin on the left side of the first column */
-.column:first-of-type {
+/* Adjusting column properties */
+.column:nth-child(1) {
   margin-left: 0;
+  text-align: left;
 }
 
-.column:last-of-type {
-  margin-right: clamp(10px, 4vmin, 40px);
+.column:nth-child(2) {
+  text-align: center;
 }
 
-/* Set the font size for the columns */
-/* .column p {
-  font-size: 1rem;
-} */
+.column:nth-child(3) {
+  text-align: center;
+}
 
+.column:nth-child(4) {
+  margin-right: 0;
+  text-align: right;
+}

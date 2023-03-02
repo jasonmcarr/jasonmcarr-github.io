@@ -6,19 +6,19 @@ import { opacityFilterRemove } from "../../utils/functions";
 function Projects() {
   opacityFilterRemove();
   return (
-    <div className="nav-aligner">
       <section className="projects-nav">
         {projects_array.map((item) => (
           <NavLink
             key={projects_array.indexOf(item)}
             to={`project${projects_array.indexOf(item) + 1}`}
           >
+            <div className="project-links">
             <h1 className="project-title">{item.Title}</h1>
             <p className="project-summary">{item.Description}</p>
+            </div>
           </NavLink>
         ))}
       </section>
-    </div>
   );
 }
 

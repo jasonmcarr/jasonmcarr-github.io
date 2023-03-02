@@ -42,11 +42,12 @@ body {
   opacity: 1;
   z-index: 0;
   padding-left: clamp(10px, 4vmin, 40px);
+  padding-right: clamp(10px, 4vmin, 40px);
   margin-top: clamp(10px, 4vmin, 40px);
   margin-left: clamp(10px, 4vmin, 40px);
   display: flex;
   flex-direction: column;
-  gap: clamp(10px, 4vmin, 40px);
+  /* gap: clamp(10px, 4vmin, 40px); */
   overflow-y: hidden;
   overflow-x: hidden;
   box-sizing: border-box;
@@ -126,28 +127,38 @@ body {
 .author-title {
   font-size: 1.875rem;
   font-weight: 300;
-  margin-bottom: calc(-1.5 * clamp(10px, 4vmin, 40px));
+  padding-bottom: 0;
+  margin-bottom: 0px;
 }
 
 .author-descriptor {
+  padding-top: 0;
+  margin: 0;
   font-size: 1rem;
   font-weight: 300;
 }
+
 .navbar {
-  margin-top: calc(-1 * clamp(10px, 4vmin, 40px));
+  /* margin-top: calc(-1 * clamp(10px, 4vmin, 40px)); */
   z-index: 1;
 }
+
 .navbar ul {
   display: flex;
   flex-direction: column;
   list-style: none;
   justify-content: space-between;
   padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .navbar li {
   list-style: none;
-  padding-bottom: clamp(10px, 4vmin, 40px);
+  /* padding-bottom: 40px; */
+  margin-top: clamp(10px, 4vmin, 40px);
 }
 
 .nav-link {
@@ -165,7 +176,7 @@ body {
   display: flex;
   flex-direction: column;
   z-index: 1;
-  gap: clamp(10px, 4vmin, 40px);
+  gap: 3px;
 }
 
 canvas {

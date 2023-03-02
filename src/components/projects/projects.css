@@ -3,19 +3,18 @@
   width: 100%;
   z-index: 1;
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   flex-direction: column;
-  gap: 7px;
-  position: absolute;
   overflow-y: scroll;
-  top: 0;
-  left: 0;
-  transform: translatex(
-    calc(100vw - (150px + 2 * clamp(10px, 4vmin, 40px)))
-  );
-  padding-top: calc(2.32 * clamp(10px, 4vmin, 40px));
+  /* margin-top: calc(-1* clamp(10px, 4vmin, 40px)); */
+  padding-top: 0;
+  margin-top: 0;
 }
+
 .project-summary {
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   text-align: right;
   font-size: 1rem;
   font-weight: 300;
@@ -25,7 +24,14 @@
   text-align: right;
   font-size: 1.875rem;
   font-weight: 300;
-  margin-bottom: calc(-0.4 * clamp(10px, 4vmin, 40px));
+  margin-bottom: 3px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.project-links {
+    padding-top: 0;
+    /* margin-top: -9px; */
 }
 
 a:hover .project-title,
@@ -34,70 +40,14 @@ a:hover .project-summary {
 }
 
 .projects-nav::-webkit-scrollbar {
-    display: none;
-}
-
-.projects-nav p {
-    font-weight: 600;
-}
-
-/* .projects-nav::-webkit-scrollbar {
-    display: none;
-}
-
-.projects-nav p {
-    font-weight: 600;
-    position: absolute;
-    right: 0;
-}
-
-.projects-nav a:hover {
-    color: #6F6F6F;
+  display: none;
 }
 
 .projects-nav a {
-    text-decoration: none;
-    color: black;
+    margin-top: 0;
+    margin-bottom: clamp(10px, 4vmin, 40px);
 }
 
-.nav-aligner {
-    overflow: visible;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: right;
-    /* position: relative; */
-/* }
-
-.web-content {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: clamp(10px, 4vmin, 40px);
-} */
-
-/* .transparent-border {
-    width: 100%;
-    height: 100%;
-    background-color: #ffffffa6;
-    z-index: 0;
-    position: relative;
+.projects-nav p {
+  font-weight: 600;
 }
-
-.transparent-border::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.8;
-    z-index: -1;
-} */
-
-/* .square {
-    box-shadow: 0 0 0 clamp(10px,4vmin,40px) black; */
-/* filter: blur(2px);
-} */
