@@ -25,7 +25,7 @@ function Navbar() {
               About
             </NavLink>
           </li>
-          <li>
+          <li className="li-contact">
             <NavLink to="/contact" className="nav-link">
               Contact {}
             </NavLink>

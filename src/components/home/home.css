@@ -5,3 +5,12 @@
   right: clamp(10px, 4vmin, 40px);
   text-align: right;
 }
+
+@media (max-width:600px){
+  .author-summary {
+    width: 90%;
+    left: clamp(10px, 4vmin, 40px);
+    /* top: calc(3px + 13.5 * clamp(10px, 4vmin, 40px)); */
+    /* text-align: left; */
+  }
+}

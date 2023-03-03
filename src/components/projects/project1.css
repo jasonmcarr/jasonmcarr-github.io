@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-between;
   /* gap: clamp(10px, 4vmin, 40px); */
-  padding-top: clamp(10px, 4vmin, 40px);
 }
 
 /* Style the individual columns */
@@ -17,19 +16,73 @@
 
 /* Adjusting column properties */
 .column:nth-child(1) {
+  order: 1;
   margin-left: 0;
   text-align: left;
 }
 
 .column:nth-child(2) {
+  order: 2;
   text-align: center;
 }
 
 .column:nth-child(3) {
+  order: 3;
+  margin-right: 0;
+  text-align: right;
+}
+
+.column-container .section-title {
+  font-weight: 600;
+}
+
+.column-container .section-subtitle {
+  text-align: left;
+  font-weight: 300;
+}
+
+.laser-Trapping img {
+  height: 100%;
+  width: 100%;
+}
+
+.column:nth-child(1) .laser-Trapping {
+  display: flex;
+  padding-left: clamp(10px, 4vmin, 100px);
+  padding-right: clamp(10px, 4vmin, 100px);
+  /* padding-top: clamp(10px, 4vmin, 40px); */
+}
+
+.equipment-list div {
   text-align: center;
 }
 
-.column:nth-child(4) {
-  margin-right: 0;
-  text-align: right;
+@media (max-width: 600px) {
+  /* body {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: visible;
+  } */
+
+  .column-container {
+    flex-direction: column;
+  }
+
+  .column-container .column {
+    text-align: left;
+  }
+
+  .column-container .column div {
+    text-align: left;
+  }
+
+  .column-parent {
+    height: 100vh;
+    overflow-y: scroll;
+    padding-bottom: 400px;
+  }
+
+  .column-parent::-webkit-scrollbar {
+    display: none;
+  }
 }
