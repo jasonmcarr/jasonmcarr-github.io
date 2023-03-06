@@ -13,8 +13,8 @@ function Projects() {
             to={`project${projects_array.indexOf(item) + 1}`}
           >
             <div className="project-links">
-            <h1 className="project-title">{item.Title}</h1>
-            <p className="project-summary">{item.Description}</p>
+            <div className="project-title">{item.Title}</div>
+            <div className="project-summary">{item.Description}</div>
             </div>
           </NavLink>
         ))}

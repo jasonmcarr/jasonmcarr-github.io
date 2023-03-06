@@ -1,5 +1,5 @@
 * {
-  font-family: "Lato", sans-serif;
+font-family: 'Montserrat', sans-serif;
   /* margin: 0; */
   box-sizing: border-box;
   color: #ffffff;
@@ -31,7 +31,7 @@ body {
 }
 
 .project-overlay-change {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.90);
 }
 
 .square {
@@ -77,16 +77,18 @@ body {
 }
 
 .auth-name {
+  font-family: 'Montserrat', sans-serif;
   animation-name: fadeOut;
   animation-duration: 0.3s;
   animation-timing-function: ease-in;
   animation-delay: 0.9s;
   animation-fill-mode: forwards;
   font-size: 1.875rem;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 .auth-folio {
+  font-family: 'Montserrat', sans-serif;
   animation-name: fadeOut;
   animation-duration: 0.3s;
   animation-timing-function: ease-in;
@@ -125,7 +127,8 @@ body {
 }
 
 .author-title {
-  font-size: 1.875rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2.875rem;
   font-weight: 300;
   padding-bottom: 0;
   margin-bottom: 0px;
@@ -163,8 +166,8 @@ body {
 
 .nav-link {
   text-decoration: none;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.125rem;
+  font-weight: 300;
 }
 .navbar .li-contact {
   padding-bottom: clamp(10px, 4vmin, 40px);

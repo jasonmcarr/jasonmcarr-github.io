@@ -1,12 +1,13 @@
 import { opacityFilter } from "../../utils/functions";
-import TableauEmbed from "./TableauEmbed";
+// import TableauEmbed from "./TableauEmbed";
 
 function Project3() {
   opacityFilter();
   return (
-    <tableau-viz id="tableauViz">
-      {/* <TableauEmbed /> */}
-    </tableau-viz>
+    <p></p>
+    // <tableau-viz id="tableauViz">
+    //   {/* <TableauEmbed /> */}
+    // </tableau-viz>
   );
 }
 

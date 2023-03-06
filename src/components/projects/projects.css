@@ -16,14 +16,15 @@
   margin-top: 0;
   margin-bottom: 0;
   text-align: right;
+  font-family: 'Montserrat', sans-serif !important;
   font-size: 1rem;
   font-weight: 300;
 }
 
 .project-title {
   text-align: right;
-  font-size: 1.875rem;
-  font-weight: 300;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2.875rem;
   margin-bottom: 3px;
   margin-top: 0;
   padding-top: 0;
