@@ -1,21 +1,13 @@
 .scatterplot-container {
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
+  padding: 0;
 }
-/* 
-.scatterplot-container img {
-  width: 100%;
-  height: auto;
-} */
+
+.modebar-container {
+  display: none;
+}
 
 .project1-container .section-title {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 1.375rem;
   font-weight: 300;
-}
-
-.scatterplot-container {
-  height: 100vh;
-  width: 100vw;
 }

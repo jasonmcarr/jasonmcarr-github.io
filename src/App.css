@@ -4,7 +4,7 @@ font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
   color: #ffffff;
   text-decoration: none;
-  /* border: solid 1px #00000080; */
+  border: solid 0.1px #ff343480;
 }
 
 body {
