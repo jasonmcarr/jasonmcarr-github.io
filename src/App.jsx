@@ -33,19 +33,17 @@ function App() {
         </div>
         <div className="square">
           <Navbar />
-          <div>
-            <Routes>
-              <Route path={"/"} element={<Home />} />
-              <Route path={"/projects"} element={<Projects />} />
-              <Route path={"/about"} element={<About />} />
-              <Route path={"/contact"} element={<Contact />} />
-              <Route path={"/projects/project1"} element={<Project1 />} />
-              <Route path={"/projects/project2"} element={<Project2 />} />
-              <Route path={"/projects/project3"} element={<Project3 />} />
-              <Route path={"/projects/project4"} element={<Project4 />} />
-              <Route path={"/projects/project5"} element={<Project5 />} />
-            </Routes>
-          </div>
+          <Routes>
+            <Route path={"/"} element={<Home />} />
+            <Route path={"/projects"} element={<Projects />} />
+            <Route path={"/about"} element={<About />} />
+            <Route path={"/contact"} element={<Contact />} />
+            <Route path={"/projects/project1"} element={<Project1 />} />
+            <Route path={"/projects/project2"} element={<Project2 />} />
+            <Route path={"/projects/project3"} element={<Project3 />} />
+            <Route path={"/projects/project4"} element={<Project4 />} />
+            <Route path={"/projects/project5"} element={<Project5 />} />
+          </Routes>
         </div>
       </div>
     </>
