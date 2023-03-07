@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.f95fe2ea.css",
-    "main.js": "/static/js/main.0b515b4b.js",
-    "static/media/therm-colored-transformed.png": "/static/media/therm-colored-transformed.47886b6ebd5e363a335c.png",
-    "static/media/laser-opt-trap-diag-1.png": "/static/media/laser-opt-trap-diag-1.3b01c96f174f82c67389.png",
+    "main.css": "/static/css/main.b5d6ce9f.css",
+    "main.js": "/static/js/main.a5380cd1.js",
     "index.html": "/index.html",
-    "main.f95fe2ea.css.map": "/static/css/main.f95fe2ea.css.map",
-    "main.0b515b4b.js.map": "/static/js/main.0b515b4b.js.map"
+    "main.b5d6ce9f.css.map": "/static/css/main.b5d6ce9f.css.map",
+    "main.a5380cd1.js.map": "/static/js/main.a5380cd1.js.map"
   },
   "entrypoints": [
-    "static/css/main.f95fe2ea.css",
-    "static/js/main.0b515b4b.js"
+    "static/css/main.b5d6ce9f.css",
+    "static/js/main.a5380cd1.js"
   ]
 }
