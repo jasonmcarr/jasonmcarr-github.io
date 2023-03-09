@@ -19,6 +19,7 @@
   font-family: 'Montserrat', sans-serif !important;
   font-size: 1rem;
   font-weight: 300;
+  color: #ffffff;
 }
 
 .project-title {
@@ -28,6 +29,7 @@
   margin-bottom: 3px;
   margin-top: 0;
   padding-top: 0;
+  color: #ffffff;
 }
 
 .project-links {
@@ -37,7 +39,7 @@
 
 a:hover .project-title,
 a:hover .project-summary {
-  color: #000000;
+  color: #757575;
 }
 
 .projects-nav::-webkit-scrollbar {
@@ -49,6 +51,30 @@ a:hover .project-summary {
     margin-bottom: clamp(10px, 4vmin, 40px);
 }
 
-.projects-nav p {
-  font-weight: 600;
+.project-nav-internal{
+  position: relative;
+  margin-bottom: clamp(10px, 4vmin, 40px);
+  padding-bottom: 20px;
+}
+
+.project-linker {
+  position: absolute;
+  z-index: 12;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 3px;
+  background-color: #00000000;
+  color: #ffffff;
+  border: none;
+  text-align: right;
+  cursor: pointer;
+  margin-top: -35px;
+  font-weight: 300;
+  font-size: 0.85rem;
+  bottom: 0;
+  right: 0;
+}
+.project-linker:hover {
+  color: #757575;
 }

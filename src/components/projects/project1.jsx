@@ -123,7 +123,7 @@ function Project1() {
           The mass of the microsphere can be calulated by measuring the radius
           of the particle (in this case, the radius was 1.72 microns). Using
           this value, along with the density of of the material at room
-          temperature (polystyrene, which has a desity of 1.055 g/cm^3), the
+          temperature (polystyrene, which has a density of 1.055 g/cm^3), the
           calculated mass of the microsphere was 2.249E-14 kg. This information
           was used to calculate the velocity of 7.758 microns/second.
         </p>
