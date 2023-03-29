@@ -11,9 +11,9 @@ function Project1() {
   const [initialWidth, setInitialWidth] = useState(0);
   const grid1Ref = useRef(null);
   const grid2Ref = useRef(null);
-  const minThermGraphWidth = 550; // Minimum therm width
+  const minThermGraphWidth = 410; // Minimum therm width
   const minThermGraphHeight = 400; // Minimum therm height
-  const minGraphWidth = 550; // Minimum width
+  const minGraphWidth = 410; // Minimum width
   const minGraphHeight = 400; // Minimum height
 
   useLayoutEffect(() => {

@@ -1,9 +1,71 @@
-.image1 img {
-  height: 100%;
+img {
+  height: auto;
   width: 100%;
 }
 
-.image1 {
-width: 10vw;
-height: 10vh;
+.project2-container {
+  height: calc(100% - (165 + 6 * clamp(10px, 4vmin, 40px)));
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: clamp(10px, 4vmin, 40px);
+  overflow-y: hidden;
+  padding-bottom: clamp(10px, 4vmin, 40px);
+}
+
+.grid1 {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.grid2 {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.grid3 {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.grid1::-webkit-scrollbar {
+  display: none;
+}
+
+.grid2::-webkit-scrollbar {
+  display: none;
+}
+
+.grid3::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 1050px) {
+  .project2-container {
+    min-width: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+    overflow-y: scroll;
+  }
+  .project2-container::-webkit-scrollbar {
+    display: none;
+  }
+  .grid1 {
+    min-width: 0;
+    height: 100%;
+    overflow-y: visible;
+  }
+
+  .grid2 {
+    min-width: 0;
+    height: 100%;
+    overflow-y: visible;
+  }
+
+  .grid3 {
+    min-width: 0;
+    height: 100%;
+    overflow-y: visible;
+  }
 }

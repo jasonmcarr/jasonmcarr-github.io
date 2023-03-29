@@ -5,9 +5,9 @@ export const projects_array = [
     Link: "https://github.com/jasonmcarr/OpticalTrap",
   },
   {
-    Title: "Project2",
-    Description: "SummaryText2",
-    Link: "",
+    Title: "Magneto-Gravitational Trapping",
+    Description: "Harmonics in an equipotential parabola",
+    Link: "https://github.com/jasonmcarr/MagnetoGravitationalTrap",
   },
   { Title: "Project3", Description: "SummaryText3", Link: "" },
   { Title: "Project4", Description: "SummaryText4", Link: "" },

@@ -12,7 +12,7 @@ export default function sketch(p) {
   };
 
   p.draw = function () {
-    p.background(128, 128, 128, 0.51);
+    p.background(256, 256, 256, 1);
     particles.forEach((particle) => {
       particle.update();
       particle.show();
@@ -53,24 +53,24 @@ export default function sketch(p) {
       let d = p.dist(this.pos.x, this.pos.y, p.mouseX / 2, p.mouseY / 2);
       let speed = p.map(d, 0, p.width, this.maxSpeed, 0);
       this.alpha = p.map(
-        p.sin(p.frameCount * 0.05 + this.pos.x * 0.01 + this.pos.y * 0.01),
+        p.cos(p.frameCount * 0.05 + this.pos.x * 0.01 + this.pos.y * 0.01),
         -1,
         1,
         125,
         255
       );
       this.size = p.map(
-        p.sin(p.frameCount * 0.05 + this.pos.x * 0.01 + this.pos.y * 0.01),
+        p.cos(p.frameCount * 0.05 + this.pos.x * 0.01 + this.pos.y * 0.01),
         -1,
         1,
         1,
-        230
+        120
       );
 
       let angle =
         p.noise(this.pos.x * 0.005, this.pos.y * 0.005, p.frameCount * 0.001) *
         p.TWO_PI *
-        4;
+        4000;
       let direction = p5.Vector.fromAngle(angle, speed);
       this.vel.add(direction);
       this.vel.limit(this.maxSpeed);

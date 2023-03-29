@@ -8,7 +8,7 @@ function Home() {
       Born in 1996, I grew up in the treasure state of Montana. I spent my
       formative years trekking the faces of indomitable mountains, breaking the
       glassy surface of waters rarely-touched, and watching the embers rise from
-      the flames below them on a cool summer evening. This love of nature
+      the flames below them on cool summer evenings. This love of nature
       inspired me to pursue an understanding of it academically, which led me to
       Physics.
       <br />
