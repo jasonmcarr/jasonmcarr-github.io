@@ -173,7 +173,7 @@ function Project2() {
         </div>
         <br />
         <p>
-          The residuals all show linear trends, which was expected anmd desired.
+          The residuals all show linear trends, which was expected and desired.
         </p>
         <br />
         <div className="section-title">Axial Quality Factor</div>
