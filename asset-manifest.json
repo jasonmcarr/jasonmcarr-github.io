@@ -1,13 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.32e6128b.css",
-    "main.js": "/static/js/main.c14071a1.js",
+    "main.css": "/static/css/main.319549e9.css",
+    "main.js": "/static/js/main.257a6f08.js",
+    "static/media/jpdhighvac.png": "/static/media/jpdhighvac.c655ee35a9d3ec96c856.png",
+    "static/media/Trajectories.png": "/static/media/Trajectories.9a0532cd2a12cd3132c4.png",
+    "static/media/jpdroughvac.png": "/static/media/jpdroughvac.cccc8b2adde766db56c0.png",
+    "static/media/boltzmannDist.png": "/static/media/boltzmannDist.6526a229c0ade2ecdd5a.png",
+    "static/media/trap_diagram.png": "/static/media/trap_diagram.eca019a1dfc8a2a024c9.png",
+    "static/media/jpdatmos.png": "/static/media/jpdatmos.dbc788fe8e577660ecf4.png",
+    "static/media/residuals.png": "/static/media/residuals.e264f3d1799dd7e3641a.png",
+    "static/media/Axial_FFT.png": "/static/media/Axial_FFT.a1e897834effd7add9bd.png",
+    "static/media/Vertical_FFT.png": "/static/media/Vertical_FFT.6f417afab06789228f9f.png",
+    "static/media/axial_dis.png": "/static/media/axial_dis.684668e066d8e2921249.png",
+    "static/media/vertical_dis.png": "/static/media/vertical_dis.8681364ff5739028f684.png",
+    "static/media/q_ax.png": "/static/media/q_ax.d4737d23830c09d8f58f.png",
+    "static/media/q_v.png": "/static/media/q_v.377275c35dbf647dba11.png",
+    "static/media/q_avg.png": "/static/media/q_avg.297fa03bca276f5dbd4d.png",
     "index.html": "/index.html",
-    "main.32e6128b.css.map": "/static/css/main.32e6128b.css.map",
-    "main.c14071a1.js.map": "/static/js/main.c14071a1.js.map"
+    "main.319549e9.css.map": "/static/css/main.319549e9.css.map",
+    "main.257a6f08.js.map": "/static/js/main.257a6f08.js.map"
   },
   "entrypoints": [
-    "static/css/main.32e6128b.css",
-    "static/js/main.c14071a1.js"
+    "static/css/main.319549e9.css",
+    "static/js/main.257a6f08.js"
   ]
 }
