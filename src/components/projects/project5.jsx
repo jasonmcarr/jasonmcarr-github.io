@@ -1,8 +1,9 @@
 import React from "react";
-import { opacityFilter } from "../../utils/functions";
+import { opacityFilter, addHorizontalNavbar } from "../../utils/functions";
 
 function Project1 (){
   opacityFilter();
+  addHorizontalNavbar();
     return (
       <section className="project5-content">
         Proj content i.e pictures and paragraphs

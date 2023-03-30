@@ -1,5 +1,5 @@
 import React from "react";
-import { opacityFilter } from "../../utils/functions";
+import { opacityFilter, addHorizontalNavbar } from "../../utils/functions";
 import "./project2.css";
 import axialDis from "../../assets/images/project2/axial_dis.png";
 import axialFFT from "../../assets/images/project2/Axial_FFT.png";
@@ -18,6 +18,7 @@ import boltzmannDist from "../../assets/images/project2/boltzmannDist.png";
 
 function Project2() {
   opacityFilter();
+  addHorizontalNavbar();
   return (
     <section className="project2-container">
       <div className="grid1">

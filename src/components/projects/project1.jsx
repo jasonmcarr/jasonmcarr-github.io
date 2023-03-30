@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useLayoutEffect } from "react";
 import Plot from "react-plotly.js";
-import { opacityFilter } from "../../utils/functions";
+import { opacityFilter, addHorizontalNavbar } from "../../utils/functions";
 import thermalMotionScatterplot from "../../assets/json_files/thermalmotionscatterplot.json";
 import verticalHistogram from "../../assets/json_files/verticalhistogram.json";
 import transverseHistogram from "../../assets/json_files/transversehistogram.json";
@@ -72,6 +72,7 @@ function Project1() {
     ),
   };
 
+  addHorizontalNavbar();
   opacityFilter();
   return (
     <div className="project1-container">

@@ -9,7 +9,11 @@ export const projects_array = [
     Description: "Harmonics in an equipotential parabola",
     Link: "https://github.com/jasonmcarr/MagnetoGravitationalTrap",
   },
-  { Title: "Project3", Description: "SummaryText3", Link: "" },
+  {
+    Title: "Tracking The Pandemic",
+    Description: "Tableau Coronavirus Dashboard",
+    Link: "https://public.tableau.com/views/coviddashboard_16748574137170/CovidTrackerDashboard1",
+  },
   { Title: "Project4", Description: "SummaryText4", Link: "" },
   { Title: "Project5", Description: "SummaryText5", Link: "" },
 ];

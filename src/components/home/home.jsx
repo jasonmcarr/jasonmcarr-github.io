@@ -1,8 +1,9 @@
 import React from "react";
-import { opacityFilterRemove } from "../../utils/functions";
+import { opacityFilterRemove, removeHorizontalNavbar } from "../../utils/functions";
 
 function Home() {
   opacityFilterRemove();
+  removeHorizontalNavbar();
   return (
     <section className="author-summary">
       Born in 1996, I grew up in the treasure state of Montana. I spent my

@@ -1,10 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { projects_array } from "../../services/projectsarray";
-import { opacityFilterRemove } from "../../utils/functions";
+import { opacityFilterRemove, removeHorizontalNavbar } from "../../utils/functions";
 
 function Projects() {
   opacityFilterRemove();
+  removeHorizontalNavbar();
   return (
     <section className="projects-nav">
       {projects_array.map((item) => (

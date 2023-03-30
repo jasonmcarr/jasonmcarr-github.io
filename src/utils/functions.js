@@ -12,3 +12,11 @@ export function opacityFilterRemove() {
     opacityFilterRemove.classList.remove("project-overlay-change");
   }
 }
+
+export function removeHorizontalNavbar() {
+  document.body.classList.remove("horizontal-navbar");
+}
+
+export function addHorizontalNavbar() {
+  document.body.classList.add("horizontal-navbar");
+}
