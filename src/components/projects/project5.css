@@ -1,17 +1,17 @@
-.img {
-  height: auto;
-  width: 100%;
+img {
+  height: 100%;
+  width: auto;
 }
 
 .project5-container {
   height: calc(100% - (165 + 6 * clamp(10px, 4vmin, 40px)));
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 3fr;
   grid-column-gap: clamp(10px, 4vmin, 40px);
   overflow-y: hidden;
   padding-bottom: clamp(10px, 4vmin, 40px);
-  border: solid 0.1px #ff343480;
+  /* border: solid 0.1px #ffd900; */
 }
 
 .grid1 {

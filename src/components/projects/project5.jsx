@@ -1,6 +1,7 @@
 import React from "react";
 import { opacityFilter, addHorizontalNavbar } from "../../utils/functions";
 import thuliumSpectra from "../../assets/images/project5/fluo_spectra.png";
+import "../projects/project5.css"
 
 function Project1() {
   setTimeout(() => {
@@ -10,9 +11,6 @@ function Project1() {
   return (
     <section className="project5-container">
       <div className="grid1">
-        <div className="image">
-          <img src={thuliumSpectra} alt="thulium spectra" />
-        </div>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit iste
           rem, numquam quos reprehenderit tempore ipsa quo similique nisi. Vero
@@ -34,6 +32,11 @@ function Project1() {
           incidunt, dolore iste earum repellendus quidem aperiam. Doloribus
           harum inventore perferendis.
         </p>
+      </div>
+      <div className="grid2">
+        <div className="image">
+          <img src={thuliumSpectra} alt="thulium spectra" />
+        </div>
       </div>
     </section>
   );

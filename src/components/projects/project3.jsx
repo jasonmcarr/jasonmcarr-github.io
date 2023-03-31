@@ -1,4 +1,4 @@
-import { opacityFilter } from "../../utils/functions";
+import { opacityFilter, addHorizontalNavbar } from "../../utils/functions";
 import React, { useRef, useEffect, useCallback } from "react";
 import "./project3.css";
 
@@ -8,6 +8,7 @@ function Project3() {
   setTimeout(() => {
     opacityFilter();
   }, 10);
+  addHorizontalNavbar();
 
   const ref = useRef(null);
   const url =
