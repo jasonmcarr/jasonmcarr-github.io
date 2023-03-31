@@ -17,7 +17,10 @@ import verticalFFT from "../../assets/images/project2/Vertical_FFT.png";
 import boltzmannDist from "../../assets/images/project2/boltzmannDist.png";
 
 function Project2() {
-  opacityFilter();
+  setTimeout(() => {
+    opacityFilter();
+  }, 10);
+
   addHorizontalNavbar();
   return (
     <section className="project2-container">
@@ -187,7 +190,9 @@ function Project2() {
           <img src={q_v} alt="quality vertical" />
         </div>
         <br />
-        <div className="section-title">Averaged Quality Factor Over Both Domains</div>
+        <div className="section-title">
+          Averaged Quality Factor Over Both Domains
+        </div>
         <div className="image">
           <img src={q_avg} alt="quality average" />
         </div>

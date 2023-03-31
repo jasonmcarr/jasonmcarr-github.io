@@ -73,7 +73,11 @@ function Project1() {
   };
 
   addHorizontalNavbar();
-  opacityFilter();
+
+  setTimeout(() => {
+    opacityFilter();
+  }, 10);
+
   return (
     <div className="project1-container">
       <div className="grid1" ref={grid1Ref}>

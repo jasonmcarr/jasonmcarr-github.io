@@ -14,7 +14,11 @@ export const projects_array = [
     Description: "Tableau Coronavirus Dashboard",
     Link: "https://public.tableau.com/views/coviddashboard_16748574137170/CovidTrackerDashboard1",
   },
-  { Title: "Project4", Description: "SummaryText4", Link: "" },
+  {
+    Title: "Selenium Web Scraping",
+    Description: "Expedia flight-information scraping & analysis",
+    Link: "https://github.com/jasonmcarr/ExpediaWebscraper",
+  },
   { Title: "Project5", Description: "SummaryText5", Link: "" },
 ];
 

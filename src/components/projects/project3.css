@@ -1,14 +1,30 @@
 .project3-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  transform: translate(15%, 4%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 1080px;
   width: 1920px;
+  margin-top: -60px;
 }
-
-
 
 
 .tableau-viz {
   height: 100%;
   width: 100%;
+}
+
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #30333a;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

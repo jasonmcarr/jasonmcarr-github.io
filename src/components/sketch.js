@@ -11,6 +11,8 @@ export default function sketch(p) {
     }
   };
 
+  let randomSize = p.random(4, 240);
+
   p.draw = function () {
     p.background(256, 256, 256, 1);
     particles.forEach((particle) => {
@@ -64,7 +66,7 @@ export default function sketch(p) {
         -1,
         1,
         1,
-        120
+        randomSize
       );
 
       let angle =

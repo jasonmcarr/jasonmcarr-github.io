@@ -5,7 +5,10 @@ import "./project3.css";
 const { tableau } = window;
 
 function Project3() {
-  opacityFilter();
+  setTimeout(() => {
+    opacityFilter();
+  }, 10);
+
   const ref = useRef(null);
   const url =
     "https://public.tableau.com/views/coviddashboard_16748574137170/CovidTrackerDashboard1";
@@ -36,9 +39,11 @@ function Project3() {
   }, [initViz, vizRef]);
 
   return (
-    <div className="project3-container">
-      <div ref={ref} className="tableau-viz" />
-    </div>
+    <body>
+      <div className="project3-container">
+        <div ref={ref} className="tableau-viz" />
+      </div>
+    </body>
   );
 }
 
