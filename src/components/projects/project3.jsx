@@ -39,11 +39,11 @@ function Project3() {
   }, [initViz, vizRef]);
 
   return (
-    <body>
+    <div className="body">
       <div className="project3-container">
         <div ref={ref} className="tableau-viz" />
       </div>
-    </body>
+    </div>
   );
 }
 

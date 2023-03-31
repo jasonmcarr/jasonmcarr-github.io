@@ -11,15 +11,23 @@ export const projects_array = [
   },
   {
     Title: "Tracking The Pandemic",
-    Description: "Tableau Coronavirus Dashboard",
+    Description: "Interactive Tableau coronavirus dashboard",
     Link: "https://public.tableau.com/views/coviddashboard_16748574137170/CovidTrackerDashboard1",
   },
   {
     Title: "Selenium Web Scraping",
-    Description: "Expedia flight-information scraping & analysis",
+    Description: "Scraping Expedia flights using python",
     Link: "https://github.com/jasonmcarr/ExpediaWebscraper",
   },
-  { Title: "Project5", Description: "SummaryText5", Link: "" },
+  {
+    Title: "Thulium Fluorescence Spectrum",
+    Description: "Curve-fitting to explain fluorescence peaks",
+    Link: "https://github.com/jasonmcarr/ThuliumFluorescenceSpectrum",
+  },
+  {
+    Title: "Optical Cooling",
+    Description:
+      "Material synthesis, SEM & XRD analysis, & fluorescence thermometry",
+    Link: "",
+  },
 ];
-
-           
