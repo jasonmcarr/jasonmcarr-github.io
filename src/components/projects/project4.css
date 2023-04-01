@@ -1,0 +1,73 @@
+.project4-container {
+  height: calc(100% - (165 + 6 * clamp(10px, 4vmin, 40px)));
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: clamp(10px, 4vmin, 40px);
+  overflow-y: hidden;
+  padding-bottom: clamp(10px, 4vmin, 40px);
+}
+
+.grid1 {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.grid1::-webkit-scrollbar {
+  display: none;
+}
+
+.modebar-container {
+  display: none;
+}
+
+.project1-container .section-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 300;
+}
+
+.scatterplot-container {
+  margin-top: -90px;
+  margin-left: -40px;
+  margin-bottom: -55px;
+}
+
+.line-chart-container {
+  margin-top: -96px;
+  margin-left: -12px;
+  margin-bottom: -55px;
+}
+
+.price-table-container {
+  margin-top: -96px;
+  margin-left: -12px;
+  margin-bottom: -55px;
+}
+
+.horizontal-navbar .navbar ul{
+  display: flex;
+  flex-direction: row;
+  gap: clamp(10px, 4vmin, 40px);
+  max-width: 450px;
+}
+
+@media (max-width: 1050px) {
+  .project4-container {
+    min-width: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+    overflow-y: scroll;
+  }
+  
+  .project4-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .grid1 {
+    min-width: 0;
+    height: 100%;
+    overflow-y: visible;
+  }
+}
