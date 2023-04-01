@@ -1,31 +1,49 @@
+.section-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 300;
+}
+
 .project3-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 1080px;
-  width: 1920px;
-  margin-top: 20px;
-  overflow: hidden;
+  height: calc(100% - (165 + 6 * clamp(10px, 4vmin, 40px)));
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: clamp(10px, 4vmin, 40px);
+  overflow-y: hidden;
+  padding-bottom: clamp(10px, 4vmin, 40px);
 }
 
-
-.tableau-viz {
+.grid1 {
   height: 100%;
-  width: 100%;
+  overflow-y: scroll;
 }
 
-.body {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #30333a;
-  height: 100vh;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.grid1::-webkit-scrollbar {
+  display: none;
+}
+
+.horizontal-navbar .navbar ul{
+  display: flex;
+  flex-direction: row;
+  gap: clamp(10px, 4vmin, 40px);
+  max-width: 450px;
+}
+
+@media (max-width: 1050px) {
+  .project3-container {
+    min-width: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+    overflow-y: scroll;
+  }
+  .project3-container::-webkit-scrollbar {
+    display: none;
+  }
+  .grid1 {
+    min-width: 0;
+    height: 100%;
+    overflow-y: visible;
+  }
 }
