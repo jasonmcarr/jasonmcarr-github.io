@@ -8,6 +8,10 @@
   padding-bottom: clamp(10px, 4vmin, 40px);
 }
 
+.plotly-hover-info {
+  z-index: 9999;
+}
+
 .grid1 {
   height: 100%;
   overflow-y: scroll;
@@ -27,20 +31,17 @@
   height: 91px;
 }
 
-.grid2 {
+.grid2-4 {
   height: 100%;
   overflow-y: scroll;
 }
 
-.grid2::-webkit-scrollbar {
+.grid2-4::-webkit-scrollbar {
   display: none;
 }
 
-.grid1 .hoverlayer {
-  visibility: visible;
-}
 
-.grid2 .hoverlayer {
+.grid2-4 .hoverlayer {
   visibility: visible;
 }
 
@@ -103,7 +104,7 @@ margin-bottom: 0px;
     height: 100%;
     overflow-y: visible;
   }
-  .grid2 {
+  .grid2-4 {
     min-width: 0;
     height: 100%;
     overflow-y: visible;

@@ -82,15 +82,12 @@ function Project4() {
       <div className="grid1" ref={grid1Ref}>
         <div className="section-title">Introduction</div>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit nisi
-          quod doloremque aut tenetur voluptatem quaerat officia maiores,
-          numquam autem alias ducimus saepe recusandae ex cum ut perferendis
-          ipsum! Hic? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Delectus, officia soluta! Totam suscipit illum perferendis architecto
-          aperiam perspiciatis quasi ex ab necessitatibus recusandae. Officia
-          eaque ea magnam inventore. Molestiae explicabo totam odit nobis saepe
-          officia blanditiis labore, recusandae dolore ut laudantium fuga
-          dolores ipsa, error quae id quisquam quo mollitia.
+          Utilizing the BeautifulSoup and Selenium Python libraries, the Expedia
+          flight page was scraped and compiled into csv format for Python
+          analysis and presentation using the Pandas and Plotly. The metrics
+          that were collected included airline, pricing, departure time, and
+          departure date for the five "best" flights, according to Expedia's
+          selection algorithms.
         </p>
         <br />
         <div className="section-title">Average Flight Prices</div>
@@ -99,18 +96,16 @@ function Project4() {
         </div>
         <br />
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit nisi
-          quod doloremque aut tenetur voluptatem quaerat officia maiores,
-          numquam autem alias ducimus saepe recusandae ex cum ut perferendis
-          ipsum! Hic? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Delectus, officia soluta! Totam suscipit illum perferendis architecto
-          aperiam perspiciatis quasi ex ab necessitatibus recusandae. Officia
-          eaque ea magnam inventore. Molestiae explicabo totam odit nobis saepe
-          officia blanditiis labore, recusandae dolore ut laudantium fuga
-          dolores ipsa, error quae id quisquam quo mollitia.
+          United Airlines generally had the cheapest available flights for the
+          chosen route only getting beaten by Delta on February 23. As the
+          booking date approached the end of the departure term, the prices of
+          all flights increased substantially. Delta was the most
+          highly-represented airline within the departure term, responsible for
+          43% of all flights. This was followed closely by United with 40%
+          representation. Delta also had the most variety in departure times.
         </p>
       </div>
-      <div className="grid2" ref={grid2Ref}>
+      <div className="grid2-4" ref={grid2Ref}>
         <div className="section-title">Average Flight Prices by Day</div>
         <div className="line-chart-container">
           <Plot data={avgPriceByAirlineByDay.data} layout={updatedLineLayout} />
