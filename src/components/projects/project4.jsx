@@ -13,6 +13,8 @@ function Project4() {
   const grid2Ref = useRef(null);
   const minGraphWidth = 410; // Minimum width
   const minGraphHeight = 400; // Minimum height
+  const minTableWidth = 200; // Minimum width
+  const minTableHeight = 91; // Minimum height
 
   useLayoutEffect(() => {
     setInitialWidth(grid1Ref.current.offsetWidth);
@@ -34,11 +36,11 @@ function Project4() {
       grid1Ref.current
         ? grid1Ref.current.offsetWidth
         : initialWidth || windowWidth * 0.8,
-      minGraphWidth
+      minTableWidth
     ),
     height: Math.max(
       grid1Ref.current ? grid1Ref.current.offsetWidth * 0.4 : windowWidth * 0.4,
-      minGraphHeight
+      minTableHeight
     ),
   };
 
@@ -78,14 +80,49 @@ function Project4() {
   return (
     <section className="project4-container">
       <div className="grid1" ref={grid1Ref}>
+        <div className="section-title">Introduction</div>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit nisi
+          quod doloremque aut tenetur voluptatem quaerat officia maiores,
+          numquam autem alias ducimus saepe recusandae ex cum ut perferendis
+          ipsum! Hic? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Delectus, officia soluta! Totam suscipit illum perferendis architecto
+          aperiam perspiciatis quasi ex ab necessitatibus recusandae. Officia
+          eaque ea magnam inventore. Molestiae explicabo totam odit nobis saepe
+          officia blanditiis labore, recusandae dolore ut laudantium fuga
+          dolores ipsa, error quae id quisquam quo mollitia.
+        </p>
+        <br />
+        <div className="section-title">Average Flight Prices</div>
         <div className="price-table-container">
           <Plot data={avgPriceByAirline.data} layout={updatedLayout} />
         </div>
+        <br />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit nisi
+          quod doloremque aut tenetur voluptatem quaerat officia maiores,
+          numquam autem alias ducimus saepe recusandae ex cum ut perferendis
+          ipsum! Hic? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Delectus, officia soluta! Totam suscipit illum perferendis architecto
+          aperiam perspiciatis quasi ex ab necessitatibus recusandae. Officia
+          eaque ea magnam inventore. Molestiae explicabo totam odit nobis saepe
+          officia blanditiis labore, recusandae dolore ut laudantium fuga
+          dolores ipsa, error quae id quisquam quo mollitia.
+        </p>
+      </div>
+      <div className="grid2" ref={grid2Ref}>
+        <div className="section-title">Average Flight Prices by Day</div>
         <div className="line-chart-container">
           <Plot data={avgPriceByAirlineByDay.data} layout={updatedLineLayout} />
         </div>
+        <br />
+        <br />
+        <div className="section-title">Average Flight Prices by Time</div>
         <div className="scatterplot-container">
-          <Plot data={avgPriceByAirlineByTime.data} layout={updatedScatterLayout} />
+          <Plot
+            data={avgPriceByAirlineByTime.data}
+            layout={updatedScatterLayout}
+          />
         </div>
       </div>
     </section>

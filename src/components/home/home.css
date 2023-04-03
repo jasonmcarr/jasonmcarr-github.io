@@ -13,7 +13,6 @@
 
 @media (max-width:600px){
   .author-summary {
-
     display: flex;
     text-align: left;
     position: relative;

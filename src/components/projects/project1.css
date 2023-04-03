@@ -27,7 +27,7 @@
 }
 
 .modebar-container {
-  display: none;
+  visibility: hidden;
 }
 
 .project1-container .section-title {

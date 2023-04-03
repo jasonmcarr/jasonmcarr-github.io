@@ -2,7 +2,7 @@
   height: calc(100% - (165 + 6 * clamp(10px, 4vmin, 40px)));
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
   grid-column-gap: clamp(10px, 4vmin, 40px);
   overflow-y: hidden;
   padding-bottom: clamp(10px, 4vmin, 40px);
@@ -17,8 +17,35 @@
   display: none;
 }
 
-.modebar-container {
+.scroll-background {
+  width: 0px;
+  height: 0px;
+}
+
+.price-table-container{
+  width: 200px;
+  height: 91px;
+}
+
+.grid2 {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.grid2::-webkit-scrollbar {
   display: none;
+}
+
+.grid1 .hoverlayer {
+  visibility: visible;
+}
+
+.grid2 .hoverlayer {
+  visibility: visible;
+}
+
+.modebar-container {
+  visibility: hidden;
 }
 
 .project1-container .section-title {
@@ -28,22 +55,21 @@
 }
 
 .scatterplot-container {
-  margin-top: -90px;
-  margin-left: -40px;
-  margin-bottom: -55px;
+  margin-left: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
 .line-chart-container {
-  margin-top: -96px;
-  margin-left: -12px;
-  margin-bottom: -55px;
+  margin-top: 10px;
+  margin-bottom: -45px;
+
 }
 
 .price-table-container {
-  margin-top: -96px;
-  margin-left: -12px;
-  margin-bottom: -55px;
-}
+  margin-top: 5px;
+margin-bottom: 0px;
+} 
 
 .horizontal-navbar .navbar ul{
   display: flex;
@@ -52,7 +78,7 @@
   max-width: 450px;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1550px) {
   .project4-container {
     min-width: 0;
     display: grid;
@@ -66,6 +92,11 @@
   }
 
   .grid1 {
+    min-width: 0;
+    height: 100%;
+    overflow-y: visible;
+  }
+  .grid2 {
     min-width: 0;
     height: 100%;
     overflow-y: visible;

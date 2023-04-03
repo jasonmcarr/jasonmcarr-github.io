@@ -8,7 +8,7 @@
   height: calc(100% - (165 + 6 * clamp(10px, 4vmin, 40px)));
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 3fr 2fr;
   grid-column-gap: clamp(10px, 4vmin, 40px);
   overflow-y: hidden;
   padding-bottom: clamp(10px, 4vmin, 40px);
@@ -30,7 +30,7 @@
   max-width: 450px;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1920px) {
   .project3-container {
     min-width: 0;
     display: grid;
