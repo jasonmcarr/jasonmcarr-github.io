@@ -78,6 +78,13 @@ margin-bottom: 0px;
   max-width: 450px;
 }
 
+@media (max-width: 2140px) {
+  .project4-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
 @media (max-width: 1550px) {
   .project4-container {
     min-width: 0;
