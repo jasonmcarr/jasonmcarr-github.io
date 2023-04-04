@@ -2,7 +2,7 @@
   height: calc(100% - (165 + 6 * clamp(10px, 4vmin, 40px)));
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-column-gap: clamp(10px, 4vmin, 40px);
   overflow-y: hidden;
   padding-bottom: clamp(10px, 4vmin, 40px);
@@ -27,7 +27,7 @@
   display: none;
 }
 
-.project5-container .section-title {
+.section-title {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 1.375rem;
   font-weight: 300;
@@ -40,7 +40,18 @@
   max-width: 450px;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 2140px) {
+    .project5-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    overflow-y: scroll;
+  }
+    .project5-container::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 1080px) {
   .project5-container {
     min-width: 0;
     display: grid;
