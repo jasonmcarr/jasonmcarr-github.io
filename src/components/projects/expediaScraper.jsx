@@ -82,7 +82,7 @@ function Project4() {
         <p>
           Utilizing the BeautifulSoup and Selenium Python libraries, the Expedia
           flight page was scraped and compiled into csv format for Python
-          analysis and presentation using the Pandas and Plotly. The metrics
+          analysis and presentation using the Pandas and Plotly Python libraries. The metrics
           that were collected included airline, pricing, departure time, and
           departure date for the five "best" flights, according to Expedia's
           selection algorithms.

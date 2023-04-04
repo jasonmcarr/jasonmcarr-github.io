@@ -12,11 +12,11 @@ import Home from "./components/home/home";
 import Projects from "./components/projects/projects";
 import About from "./components/about/about";
 import Contact from "./components/contact/contact";
-import Project1 from "./components/projects/project1";
-import Project2 from "./components/projects/project2";
-import Project3 from "./components/projects/project3";
-import Project4 from "./components/projects/project4";
-import Project5 from "./components/projects/project5";
+import Project2 from "./components/projects/opticalTrapping";
+import Project4 from "./components/projects/magGravTrapping";
+import Project3 from "./components/projects/pandemicTracker";
+import Project1 from "./components/projects/expediaScraper";
+import Project5 from "./components/projects/fluorescenceSpectrum";
 
 function App() {
   return (
