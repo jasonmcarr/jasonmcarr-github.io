@@ -27,7 +27,7 @@ export const projects_array = [
   {
     Title: "Optical Cooling",
     Description:
-      "Material synthesis, SEM & XRD analysis, & fluorescence thermometry",
+      "SEM & XRD analysis",
     Link: "",
   },
 ];

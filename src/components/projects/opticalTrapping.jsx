@@ -80,7 +80,7 @@ function Project1() {
 
   return (
     <div className="project1-container">
-      <div className="grid1" ref={grid1Ref}>
+      <div className="grid1-2" ref={grid1Ref}>
         <div className="section-title">Introduction</div>
         <p>
           The trapping of particles using a single-beam optical tweezer is an
@@ -122,7 +122,7 @@ function Project1() {
         </p>
         <br />
       </div>
-      <div className="grid2" ref={grid2Ref}>
+      <div className="grid2-2" ref={grid2Ref}>
         <div className="section-title">Particle Mass & Velocity</div>
         <p>
           The mass of the microsphere can be calulated by measuring the radius

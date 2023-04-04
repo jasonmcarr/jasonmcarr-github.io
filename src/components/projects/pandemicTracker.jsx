@@ -12,7 +12,7 @@ function Project3() {
 
   return (
     <section className="project3-container">
-      <div className="grid1">
+      <div className="grid1-3">
         <div className="section-title">Introduction</div>
         <p>
           A fully interactive tableau dashboard utilizing active-filtering of
@@ -25,8 +25,20 @@ function Project3() {
         <div className="section-title">Dashboard Images</div>
         <p>
           Images of the interactive tableau dashboard. The actual dashboard can
-          be viewed by clicking the code link in the project description on the
-          projects page.
+          be viewed by clicking&nbsp;
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              window.open(
+                "https://public.tableau.com/views/coviddashboard_16748574137170/CovidTrackerDashboard1",
+                "_blank"
+              );
+            }}
+            className="here-button"
+          >
+            here
+          </button>
+          .
         </p>
         <br />
         <div className="image">

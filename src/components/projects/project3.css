@@ -14,12 +14,12 @@
   padding-bottom: clamp(10px, 4vmin, 40px);
 }
 
-.grid1 {
+.grid1-3 {
   height: 100%;
   overflow-y: scroll;
 }
 
-.grid1::-webkit-scrollbar {
+.grid1-3::-webkit-scrollbar {
   display: none;
 }
 
@@ -28,6 +28,19 @@
   flex-direction: row;
   gap: clamp(10px, 4vmin, 40px);
   max-width: 450px;
+}
+
+.here-button {
+  background-color: #00000000;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.here-button:hover {
+  color: #757575;
 }
 
 @media (max-width: 1920px) {
@@ -41,7 +54,7 @@
   .project3-container::-webkit-scrollbar {
     display: none;
   }
-  .grid1 {
+  .grid1-3 {
     min-width: 0;
     height: 100%;
     overflow-y: visible;

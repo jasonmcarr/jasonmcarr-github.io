@@ -24,7 +24,7 @@ function Project2() {
   addHorizontalNavbar();
   return (
     <section className="project2-container">
-      <div className="grid1">
+      <div className="grid1-4">
         <div className="section-title">Introduction</div>
         <p>
           Magneto-gravitational trapping of diamagnetic materials involves
@@ -100,7 +100,7 @@ function Project2() {
         <p>Absolute value of vertical displacement and logarithmic count.</p>
         <br />
       </div>
-      <div className="grid2">
+      <div className="grid2-4">
         <div className="section-title">
           Joint Probability Distribution for Atmospheric Pressure
         </div>
@@ -170,7 +170,7 @@ function Project2() {
         </p>
         <br />
       </div>
-      <div className="grid3">
+      <div className="grid3-4">
         <div className="section-title">Residuals</div>
         <div className="image">
           <img src={residuals} alt="residuals" />

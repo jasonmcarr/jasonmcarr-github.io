@@ -6,14 +6,16 @@
   z-index: 1;
   max-width: 500px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
   /* background-color: #0D0D0D; */
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
 }
 
-.contact-content h2 {
-  font-size: 1.875rem;
-  margin-bottom: 20px;
+.form-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2.875rem;
+  font-weight: 300;
+  text-align: center;
 }
 
 .contact-content label {
@@ -27,7 +29,7 @@
 .contact-content textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 16px;
@@ -44,7 +46,7 @@
 }
 
 .contact-content input[type="submit"]:hover {
-  background-color: #0D0D0D;
+  background-color: #757575;
 }
 
 .contact-me input[type="text"],

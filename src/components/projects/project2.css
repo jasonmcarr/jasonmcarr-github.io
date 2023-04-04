@@ -19,30 +19,30 @@ img {
   padding-bottom: clamp(10px, 4vmin, 40px);
 }
 
-.grid1 {
+.grid1-4 {
   height: 100%;
   overflow-y: scroll;
 }
 
-.grid2 {
+.grid2-4 {
   height: 100%;
   overflow-y: scroll;
 }
 
-.grid3 {
+.grid3-4 {
   height: 100%;
   overflow-y: scroll;
 }
 
-.grid1::-webkit-scrollbar {
+.grid1-4::-webkit-scrollbar {
   display: none;
 }
 
-.grid2::-webkit-scrollbar {
+.grid2-4::-webkit-scrollbar {
   display: none;
 }
 
-.grid3::-webkit-scrollbar {
+.grid3-4::-webkit-scrollbar {
   display: none;
 }
 
@@ -57,19 +57,19 @@ img {
   .project2-container::-webkit-scrollbar {
     display: none;
   }
-  .grid1 {
+  .grid1-4 {
     min-width: 0;
     height: 100%;
     overflow-y: visible;
   }
 
-  .grid2 {
+  .grid2-4 {
     min-width: 0;
     height: 100%;
     overflow-y: visible;
   }
 
-  .grid3 {
+  .grid3-4 {
     min-width: 0;
     height: 100%;
     overflow-y: visible;
