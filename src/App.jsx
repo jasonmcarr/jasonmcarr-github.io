@@ -17,6 +17,7 @@ import Project4 from "./components/projects/magGravTrapping";
 import Project3 from "./components/projects/pandemicTracker";
 import Project1 from "./components/projects/expediaScraper";
 import Project5 from "./components/projects/fluorescenceSpectrum";
+import Project6 from "./components/projects/opticalCooling";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
             <Route path={"/projects/project3"} element={<Project3 />} />
             <Route path={"/projects/project4"} element={<Project4 />} />
             <Route path={"/projects/project5"} element={<Project5 />} />
+            <Route path={"/projects/project6"} element={<Project6 />} />
           </Routes>
         </div>
       </div>
