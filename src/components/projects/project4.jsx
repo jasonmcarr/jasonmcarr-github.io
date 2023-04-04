@@ -11,10 +11,10 @@ function Project4() {
   const [initialWidth, setInitialWidth] = useState(0);
   const grid1Ref = useRef(null);
   const grid2Ref = useRef(null);
-  const minGraphWidth = 410; // Minimum width
-  const minGraphHeight = 400; // Minimum height
-  const minTableWidth = 200; // Minimum width
-  const minTableHeight = 91; // Minimum height
+  const minGraphWidth = 310; // Minimum width
+  const minGraphHeight = 300; // Minimum height
+  const minTableWidth = 210; // Minimum width
+  const minTableHeight = 100; // Minimum height
 
   useLayoutEffect(() => {
     setInitialWidth(grid1Ref.current.offsetWidth);
@@ -71,15 +71,13 @@ function Project4() {
       minGraphHeight
     ),
   };
-
   addHorizontalNavbar();
-
   setTimeout(() => {
     opacityFilter();
   }, 10);
   return (
     <section className="project4-container">
-      <div className="grid1" ref={grid1Ref}>
+      <div className="grid1-4" ref={grid1Ref}>
         <div className="section-title">Introduction</div>
         <p>
           Utilizing the BeautifulSoup and Selenium Python libraries, the Expedia
@@ -105,6 +103,7 @@ function Project4() {
           representation. Delta also had the most variety in departure times.
         </p>
       </div>
+      <br />
       <div className="grid2-4" ref={grid2Ref}>
         <div className="section-title">Average Flight Prices by Day</div>
         <div className="line-chart-container">
@@ -112,8 +111,10 @@ function Project4() {
         </div>
         <br />
         <br />
+        <br />
+        <br />
         <div className="section-title">Average Flight Prices by Time</div>
-        <div className="scatterplot-container">
+        <div className="scatterplot-airline-container">
           <Plot
             data={avgPriceByAirlineByTime.data}
             layout={updatedScatterLayout}

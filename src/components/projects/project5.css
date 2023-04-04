@@ -9,21 +9,21 @@
   /* border: solid 0.1px #ffd900; */
 }
 
-.grid1 {
+.grid1-5 {
   height: 100%;
   overflow-y: scroll;
 }
 
-.grid2 {
+.grid2-5 {
   height: 100%;
   overflow-y: scroll;
 }
 
-.grid1::-webkit-scrollbar {
+.grid1-5::-webkit-scrollbar {
   display: none;
 }
 
-.grid2::-webkit-scrollbar {
+.grid2-5::-webkit-scrollbar {
   display: none;
 }
 
@@ -51,13 +51,13 @@
   .project5-container::-webkit-scrollbar {
     display: none;
   }
-  .grid1 {
+  .grid1-5 {
     min-width: 0;
     height: 100%;
     overflow-y: visible;
   }
 
-  .grid2 {
+  .grid2-5 {
     min-width: 0;
     height: 100%;
     overflow-y: visible;

@@ -10,7 +10,7 @@ function Project1() {
   addHorizontalNavbar();
   return (
     <section className="project5-container">
-      <div className="grid1">
+      <div className="grid1-5">
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit iste
           rem, numquam quos reprehenderit tempore ipsa quo similique nisi. Vero
@@ -33,7 +33,7 @@ function Project1() {
           harum inventore perferendis.
         </p>
       </div>
-      <div className="grid2">
+      <div className="grid2-5">
         <div className="image">
           <img src={thuliumSpectra} alt="thulium spectra" />
         </div>

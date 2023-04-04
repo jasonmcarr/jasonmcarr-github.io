@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-column-gap: clamp(10px, 4vmin, 40px);
-  overflow-y: hidden;
+  overflow: hidden;
   padding-bottom: clamp(10px, 4vmin, 40px);
 }
 
@@ -12,12 +12,12 @@
   z-index: 9999;
 }
 
-.grid1 {
+.grid1-4 {
   height: 100%;
   overflow-y: scroll;
 }
 
-.grid1::-webkit-scrollbar {
+.grid1-4::-webkit-scrollbar {
   display: none;
 }
 
@@ -34,12 +34,17 @@
 .grid2-4 {
   height: 100%;
   overflow-y: scroll;
+  grid-column-start: 2;
+  grid-column-end: 3;
+    /* align first item in column 2 with last item in column 1 */
+  grid-row-start: 2;
+  /* shift entire column 2 up to align with column 1 */
+  grid-row-end: -1;
 }
 
 .grid2-4::-webkit-scrollbar {
   display: none;
 }
-
 
 .grid2-4 .hoverlayer {
   visibility: visible;
@@ -49,13 +54,13 @@
   visibility: hidden;
 }
 
-.project1-container .section-title {
+.project4-container .section-title {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 1.375rem;
   font-weight: 300;
 }
 
-.scatterplot-container {
+.scatterplot-airline-container {
   margin-left: 0px;
   margin-top: 10px;
   margin-bottom: 0px;
@@ -64,12 +69,11 @@
 .line-chart-container {
   margin-top: 10px;
   margin-bottom: -45px;
-
 }
 
 .price-table-container {
   margin-top: 5px;
-margin-bottom: 0px;
+  margin-bottom: 0px;
 } 
 
 .horizontal-navbar .navbar ul{
@@ -81,9 +85,21 @@ margin-bottom: 0px;
 
 @media (max-width: 2140px) {
   .project4-container {
+    min-width: 0;
     display: grid;
+    grid-column-gap: clamp(10px, 4vmin, 40px);
     grid-template-columns: 1fr 3fr;
+    overflow-y: scroll;
   }
+
+   .grid2-4::-webkit-scrollbar {
+    display: none;
+  }
+
+  .project4-container::-webkit-scrollbar {
+    display: none;
+  }
+
 }
 
 @media (max-width: 1550px) {
@@ -99,7 +115,7 @@ margin-bottom: 0px;
     display: none;
   }
 
-  .grid1 {
+  .grid1-4 {
     min-width: 0;
     height: 100%;
     overflow-y: visible;
@@ -108,5 +124,9 @@ margin-bottom: 0px;
     min-width: 0;
     height: 100%;
     overflow-y: visible;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
   }
 }

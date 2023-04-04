@@ -106,7 +106,7 @@ function Project1() {
         </p>
         <br />
         <div className="section-title">Thermal Motion of a Particle</div>
-        <div className="scatterplot-container">
+        <div className="scatterplot-container-therm">
           <Plot data={thermalMotionScatterplot.data} layout={updatedLayout} />
         </div>
         <br />
