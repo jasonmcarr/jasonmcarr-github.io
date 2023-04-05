@@ -26,8 +26,7 @@ export const projects_array = [
   },
   {
     Title: "Optical Cooling",
-    Description:
-      "SEM & XRD analysis",
-    Link: "",
+    Description: "SEM & XRD analysis",
+    Link: "https://drive.google.com/file/d/0B8MF5XwPCngGR2l6dEc4bmNiZG1SUmhmNkpLU1FQVUN6d09V/view?usp=share_link&resourcekey=0-qkRGv-l1YALsyIxyGAM8TA",
   },
 ];
