@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.8f1cc65f.css",
-    "main.js": "/static/js/main.093db1cd.js",
+    "main.css": "/static/css/main.bae6400a.css",
+    "main.js": "/static/js/main.c468d261.js",
+    "static/media/optical-cooling.png": "/static/media/optical-cooling.96e748dae0a00a1b7755.png",
     "static/media/tracker-home.png": "/static/media/tracker-home.61a409152ff45e6da84a.png",
     "static/media/tracker-bar.png": "/static/media/tracker-bar.78fa02a6b3eb61519c70.png",
     "static/media/Trajectories.png": "/static/media/Trajectories.08e7fb50d8bd673e25dc.png",
@@ -10,19 +11,19 @@
     "static/media/boltzmannDist.png": "/static/media/boltzmannDist.cdb6227ca9402b8810cd.png",
     "static/media/jpdatmos.png": "/static/media/jpdatmos.6cb9cfbe1d37078d8540.png",
     "static/media/trap_diagram.png": "/static/media/trap_diagram.edbf2e756039616cae64.png",
-    "static/media/fluo_spectra.png": "/static/media/fluo_spectra.b8e57a7ef3aeb6e4a4c0.png",
     "static/media/residuals.png": "/static/media/residuals.5bbb6c0baa985e031fa3.png",
+    "static/media/fluo_spectra.png": "/static/media/fluo_spectra.2be36605ff162bf3e197.png",
     "static/media/Axial_FFT.png": "/static/media/Axial_FFT.27c214db2c0dacf9aeeb.png",
     "static/media/Vertical_FFT.png": "/static/media/Vertical_FFT.83022817b9e73d06255e.png",
     "static/media/axial_dis.png": "/static/media/axial_dis.66e1d67b270c9b468047.png",
     "static/media/vertical_dis.png": "/static/media/vertical_dis.a4e2616b07d5dd9c6e80.png",
     "static/media/q_ax.png": "/static/media/q_ax.fa86fbc429e6cd5e63b3.png",
     "index.html": "/index.html",
-    "main.8f1cc65f.css.map": "/static/css/main.8f1cc65f.css.map",
-    "main.093db1cd.js.map": "/static/js/main.093db1cd.js.map"
+    "main.bae6400a.css.map": "/static/css/main.bae6400a.css.map",
+    "main.c468d261.js.map": "/static/js/main.c468d261.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f1cc65f.css",
-    "static/js/main.093db1cd.js"
+    "static/css/main.bae6400a.css",
+    "static/js/main.c468d261.js"
   ]
 }
