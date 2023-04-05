@@ -1,0 +1,45 @@
+.project6-container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-column-gap: clamp(10px, 4vmin, 40px);
+  padding-bottom: clamp(10px, 4vmin, 40px);
+}
+
+.poster-container {
+  height: 100%;
+  overflow-y: scroll;
+}
+.poster-container::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 1550px) {
+  .project6-container {
+    min-width: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+    overflow-y: scroll;
+  }
+
+  .grid2-6 {
+    grid-column: 1;
+  }
+
+  .poster-container {
+    min-width: 0;
+    height: 100%;
+    overflow-y: visible;
+  }
+
+  .project6-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .grid1-6,
+  .grid3-6 {
+    display: none;
+  }
+}

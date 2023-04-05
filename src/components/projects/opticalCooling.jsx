@@ -1,20 +1,23 @@
-// import React from "react";
-// import { Document, Page } from "react-pdf";
-// import PDF from "../../assets/pdfs/project6/Optical_Cooling.pdf";
 import { opacityFilter, addHorizontalNavbar } from "../../utils/functions";
+import opticalCooling from "../../assets/images/project6/optical-cooling.png";
+import "./project6.css";
 
 function Project6() {
+  setTimeout(() => {
     opacityFilter();
-    addHorizontalNavbar();
-
-
-
-
-
-
-//     <Document file={PDF}>
-//       <Page pageNumber={1} />
-//     </Document>
-
+  }, 10);
+  addHorizontalNavbar();
+  return (
+    <div className="project6-container">
+      <div className="grid1-6"></div>
+      <div className="poster-container">
+        <div className="poster">
+          <img src={opticalCooling} alt="optical cooling poster" />
+        </div>
+      </div>
+      <div className="grid3-6"></div>
+    </div>
+  );
 }
+
 export default Project6;
