@@ -11,7 +11,7 @@ export default function sketch(p) {
     }
   };
 
-  let randomSize = p.random(4, 240);
+  let randomSize = p.random(230, 240);
 
   p.draw = function () {
     p.background(256, 256, 256, 1);
