@@ -6,7 +6,7 @@ function Navbar() {
     <>
       <nav className="permanent-elements">
         <h1 className="author-title">Jason Carr</h1>
-        <h4 className="author-descriptor">Data Analyst & Physicist</h4>
+        <h4 className="author-descriptor">Electrical Engineering & Optoelectronics</h4>
       </nav>
       <nav className={"navbar"}>
         <ul>
